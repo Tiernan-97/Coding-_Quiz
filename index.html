@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Quiz</title>
+    <link rel="stylesheet" href="./Assets/CSS/reset.css">
+    <link rel="stylesheet" href="./Assets/CSS/style.css">
+</head>
+<body>
+    <header>
+        <div id="highscores"></div>
+        <div id="timer"></div>
+    </header>
+    <main>
+      <div id="homeScreen">
+        <h1>Welcome to my Coding Quiz</h1>
+        <h2>Best of luck to you!</h2>
+        <button id="quizStart">Start the Quiz!</button>
+      </div>
+
+     <div id="quiz" class="hidden">
+        <div id="questions"></div>
+        <div id="answers"></div>
+        <div id="message"></div>
+     </div>
+
+     <div id="results" class="hidden"></div>
+            
+        </main>
+</body>
+<script src="/assets/JS/questions.js"></script>
+<script src="/assets/JS/quiz.js"></script>
+</html>
