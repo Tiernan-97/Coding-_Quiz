@@ -1,0 +1,77 @@
+:root {
+    --background: black;
+    --text: rgb(231, 155, 14);
+    --card: grey;
+
+}
+
+header {
+    background-color: var(--card);
+    color: var(--text);
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+body {
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+#homeScreen {
+    background-color: var(--card);
+    color: var(--text);
+    display: flex;
+    width: 800px;
+    height: 600px;
+    border-radius: 20px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+.hidden {
+    display: none;
+}
+
+#quiz {
+    background-color: var(--card);
+    color: var(--text);
+    width: 800px;
+    height: 600px;
+    border-radius: 20px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+#results{
+    background-color: var(--card);
+    color: var(--text);
+    width: 400px;
+    height: 600px;
+    border-radius: 20px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+#scoresheet {
+    background-color: var(--card);
+    color: var(--text);
+    width: 800px;
+    height: 600px;
+    border-radius: 20px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}

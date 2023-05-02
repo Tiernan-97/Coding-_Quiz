@@ -11,11 +11,13 @@
 <body>
     <header>
         <div id="highscores"></div>
-        <div id="timer"></div>
+        <div id="timer">
+          <a href="highscores.html">High Scores</a>
+        </div>
     </header>
     <main>
       <div id="homeScreen">
-        <h1>Welcome to my Coding Quiz</h1>
+        <h1>Welcome the quiz!</h1>
         <h2>Best of luck to you!</h2>
         <button id="quizStart">Start the Quiz!</button>
       </div>
@@ -26,7 +28,13 @@
         <div id="message"></div>
      </div>
 
-     <div id="results" class="hidden"></div>
+     <div id="results" class="hidden">
+      <div id="summary"></div>
+      <button id="viewScores" class="btn">View High Scores</button>
+      <input type="text" id="initials" placeholder="Enter your Initials" />
+      <button id="saveScore" class="btn">Save Score</button>
+      <button id="playAgain" class="btn">Play Again</button>
+     </div>
             
         </main>
 </body>

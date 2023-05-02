@@ -1,8 +1,12 @@
 var quizStart = document.getElementById("quizStart");
+var saveScore = document.getElementById("saveScore");
+var viewScores = document.getElementById("viewScores");
+var playAgain = document.getElementById("playAgain");
 
+var results = document.getElementById("results")
 var startScreen = document.getElementById("homeScreen");
 var quiz = document.getElementById("quiz");
-var results = document.getElementById("results");
+var summary = document.getElementById("summary");
 
 var answers = document.getElementById("answers");
 var message = document.getElementById("message");
@@ -22,7 +26,7 @@ function endGame() {
     quiz.style.display = 'none';
     results.style.display = 'flex';
 
-    results.textContent = "Your score is: " + score;
+    summary.textContent = "Your score is: " + score;
 };
 
 function startGame() {
@@ -101,4 +105,19 @@ function displayMessage(msg) {
     }, 1000);
 }
 
+function highScores (e) {
+    window.location.href = 'highscores.html';
+}
+
+function saveScores(e) {
+    var initials = document.getElementById("initials").value;
+    if (initials !=="") {
+        localStorage.setItem(initials, score);
+        document.getElementById("initials").value = "";
+    }
+}
+
 quizStart.addEventListener("click", startGame);
+playAgain.addEventListener("click", startGame);
+viewScores.addEventListener("click", highScores);
+saveScore.addEventListener("click", saveScores);
