@@ -36,6 +36,11 @@ THEN I can save my initials and my score
 
 I have created a Quiz, which has a start button and a timer starts when it is clicked. When questions are answered correctly, score increases. When questions are answered incorrectly, score is decreased and 5 seconds is taken off of the time. When the quiz is over (after all questions ahve been answered or the clock runs to 0), you're presented with a results screen which saves your score.
 
+## Links
+GitHub Repo: https://github.com/Tiernan-97/Coding_Quiz
+GitHub Live Page: https://tiernan-97.github.io/Coding_Quiz/
+
+
 ## Screenshot
 
 <img src="quizScreenShot.png" alt="Password Generator Screenshot"/>
